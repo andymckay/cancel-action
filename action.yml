@@ -1,4 +1,5 @@
 name: 'Cancel this build'
+description: 'Uses the GitHub Actions API to cancel the build'
 inputs:
   token:
     description: 'Token'
