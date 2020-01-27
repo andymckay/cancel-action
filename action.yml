@@ -11,5 +11,5 @@ runs:
   using: 'node12'
   main: 'cancel.js'
 branding:
-  icon: 'frown'
+  icon: 'cloud-snow'
   color: 'orange'
