@@ -1,4 +1,4 @@
-This Action uses the GitHub API to cancel the workflow. Example usage:
+This Action uses the [GitHub API](https://developer.github.com/v3/actions/workflow_runs/#cancel-a-workflow-run) to cancel the workflow. Example usage:
 
 ```
     - name: cancelling
