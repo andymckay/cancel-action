@@ -10,3 +10,6 @@ inputs:
 runs:
   using: 'node12'
   main: 'cancel.js'
+branding:
+  icon: 'frown'
+  color: 'orange'
