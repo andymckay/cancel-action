@@ -3,10 +3,8 @@ description: 'Uses the GitHub Actions API to cancel the build'
 inputs:
   token:
     description: 'Token'
-    required: true
-  repository:
-    description: 'Repository'
-    required: true
+    required: false
+    default: ${{ github.token }}
 runs:
   using: 'node12'
   main: 'cancel.js'

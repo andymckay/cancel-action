@@ -1,7 +1,7 @@
 const https = require('https');
 const options = {
   hostname: 'api.github.com',
-  path: `/repos/${process.env.INPUT_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}/cancel`,
+  path: `/repos/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}/cancel`,
   headers: {
     'Authorization': `token ${process.env.INPUT_TOKEN}`,
     'Content-Type': 'application/json',
