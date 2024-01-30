@@ -6,7 +6,7 @@ inputs:
     required: false
     default: ${{ github.token }}
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'cancel.js'
 branding:
   icon: 'cloud-snow'
