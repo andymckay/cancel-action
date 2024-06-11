@@ -1,4 +1,7 @@
 const https = require('https');
+const github = require('@actions/github');
+const core = require('@actions/core');
+
 const options = {
   hostname: 'api.github.com',
   path: `/repos/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}/cancel`,
@@ -29,3 +32,5 @@ req.on('error', (error) => {
 })
 
 req.end();
+
+core.summary.addRaw(`Cancelled the workflow run from job ${github.context.job}.`)
