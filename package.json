@@ -1,0 +1,20 @@
+{
+  "name": "cancel-action",
+  "version": "1.0.0",
+  "description": "This Action uses the [GitHub API](https://developer.github.com/v3/actions/workflow_runs/#cancel-a-workflow-run) to cancel the currently running workflow. Example usage:",
+  "main": "cancel.js",
+  "scripts": {
+    "build": "ncc build cancel.js --license licenses.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
+  }
+}

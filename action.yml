@@ -7,7 +7,7 @@ inputs:
     default: ${{ github.token }}
 runs:
   using: 'node20'
-  main: 'cancel.js'
+  main: 'dist/index.js'
 branding:
   icon: 'cloud-snow'
   color: 'orange'
