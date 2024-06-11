@@ -30,4 +30,4 @@ req.on('error', (error) => {
 
 req.end();
 
-console.log(`::debug::Cancelled the workflow run from job ${process.env.GITHUB_JOB}`);
+console.log(`::warning::Cancelled the workflow run from job ${process.env.GITHUB_JOB}`);
